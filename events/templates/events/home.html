@@ -1,5 +1,5 @@
-
 <!doctype html>
+{% load static %}
 <html lang="en" data-bs-theme="auto">
   <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
 
@@ -147,10 +147,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">About me</a>
+          <a class="nav-link" aria-current="page" href="{% static 'aboutme.txt' %}">About me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Facebook</a>
+          <a class="nav-link" href="https://www.instagram.com/">Instagram</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Blog</a>
@@ -264,7 +264,7 @@
     <div class="row py-lg-5" id="dop">
       <div class="col-lg-6 col-md-8 mx-auto">
 <!--        <h1 class="fw-light">Album example</h1>-->
-        <a href="https://google.com"><img id="image" src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80"></a>
+        <a href="https://google.com"><img id="image" src="{% static 'Screenshot_20230215_060134.png' %}" alt="logo" width="200" height="200"></a>
         <p class="lead text-body-secondary">Hi there, I`m happy to see you here. You can write me a message or just say hi. I`ll be happy to answer you.</p>
         <p>
           <a href="mailto:erikvlad22052005@gmail.com" class="btn btn-primary my-2">Mail me</a>
