@@ -7,3 +7,6 @@ class Post(models.Model):
     post_date = models.DateTimeField('date published')
     post_image = models.ImageField(upload_to='post_images/')
 
+    def get_summary(self):
+        return self.post_text[:15]
+
